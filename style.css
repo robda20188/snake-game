@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pantalla{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bandera{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#cuadrado-1{
+    height: 175px;
+    width: 325px;
+    background-color: #57aacb;
+}
+
+#cuadrado-3{
+    height: 175px;
+    width: 175px;
+    background-color: #57aacb;
+}
+
+#cuadrado-4{
+    height: 150px;
+    width: 325px;
+    background-color: white;
+}
+
+#cuadrado-2{
+    height: 150px;
+    width: 175px;
+    background-color: white;
+}
+
+#cuadrado-5{
+    height: 175px;
+    width: 500px;
+    background-color: #57aacb;
+}
+
+#cuadrado-1, #cuadrado-2, #cuadrado-3, #cuadrado-4, #cuadrado-5, #sol{
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+#sol-container{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sol{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 212, 82);
+    border-radius: 50%;
+}
+
+.casilla{
+    width: 25px;
+    height: 25px;
+}
+
+#cabeza{
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+}
+
+.manzana{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+}
+
+.cola{
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+}
+
+.game-over{
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+}
+
+#cabecera{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #117423;
+}
+
+#container-pantalla{
+    border: 20px #117423 solid;
+}
+
+#manzanas{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#n-manzanas{
+    font-size: 45px;
+    color: white;
+}
+
+.b{
+    background-color: white;
+}
+
+.a{
+    background-color: #57aacb;
+}
+
+#restart{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 380px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.frances{
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+
+.bleu, .blanc, .rouge{
+    width: 8.33px;
+    height: 25px;
+}
+
+.bleu{
+    background-color: blue;
+}
+
+.blanc{
+    background-color: white;
+}
+
+.rouge{
+    background-color: red;
+}
+
